@@ -36,7 +36,7 @@ namespace BannerlordCheats.Patches.Combat
         }
     }
 
-    [HarmonyPatch(typeof(DefaultAgentApplyDamageModel), nameof(DefaultAgentApplyDamageModel.DecideCrushedThrough))]
+    [HarmonyPatch(typeof(SandboxAgentApplyDamageModel), nameof(SandboxAgentApplyDamageModel.DecideCrushedThrough))]
     public static class AlwaysCrushThroughShields_Default
     {
         [UsedImplicitly]

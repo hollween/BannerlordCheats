@@ -35,7 +35,7 @@ namespace BannerlordCheats.Patches.Combat
         }
     }
 
-    [HarmonyPatch(typeof(DefaultAgentApplyDamageModel), nameof(DefaultAgentApplyDamageModel.CalculateDamage))]
+    [HarmonyPatch(typeof(SandboxAgentApplyDamageModel), nameof(SandboxAgentApplyDamageModel.CalculateDamage))]
     public static class PartyOneHitKill_Default
     {
         [UsedImplicitly]

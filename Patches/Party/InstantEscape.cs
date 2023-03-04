@@ -3,16 +3,17 @@ using BannerlordCheats.Settings;
 using HarmonyLib;
 using JetBrains.Annotations;
 using TaleWorlds.CampaignSystem;
+using TaleWorlds.CampaignSystem.CampaignBehaviors;
 using TaleWorlds.CampaignSystem.GameComponents;
 
 namespace BannerlordCheats.Patches.Party
 {
-    [HarmonyPatch(typeof(DefaultPlayerCaptivityModel), nameof(DefaultPlayerCaptivityModel.CheckCaptivityChange))]
+    [HarmonyPatch(typeof(PlayerCaptivityCampaignBehavior), nameof(PlayerCaptivityCampaignBehavior.CheckCaptivityChange))]
     public static class InstantEscape
     {
         [UsedImplicitly]
         [HarmonyPostfix]
-        public static void CheckCaptivityChange(float dt, ref string __result)
+        public static void CheckCaptivityChange(float dt)
         {
             try
             {

@@ -35,7 +35,7 @@ namespace BannerlordCheats.Patches.Combat
         }
     }
 
-    [HarmonyPatch(typeof(DefaultAgentApplyDamageModel), nameof(DefaultAgentApplyDamageModel.DecideAgentKnockedBackByBlow))]
+    [HarmonyPatch(typeof(SandboxAgentApplyDamageModel), nameof(SandboxAgentApplyDamageModel.DecideAgentKnockedBackByBlow))]
     public static class NeverKnockedBackByAttacks_Default
     {
         [UsedImplicitly]

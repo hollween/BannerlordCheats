@@ -1,7 +1,7 @@
 ﻿<Module>
   <Name value="Cheats"/>
   <Id value="Cheats"/>
-  <Version value="vX.X.X.X"/>
+  <Version value="v3.1.1.0"/>
   <SingleplayerModule value="true"/>
   <MultiplayerModule value="false"/>
   <Official value="false"/>
